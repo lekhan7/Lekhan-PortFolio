@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaDownload } from 'react-icons/fa'
 import './Hero.css'
-import pp from "../assets/mainpic.jpeg"
+import pp from "../assets/mainimg.jpeg"
 
 const Hero = () => {
   const socialLinks = [
