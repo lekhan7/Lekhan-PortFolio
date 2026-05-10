@@ -13,6 +13,7 @@ const Hero = () => {
      { icon: FaPaperclip, url: '/Lekhan_karumbaiah_k_t_Resume_compressed.pdf', label: 'Resume' }
   ]
 
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
