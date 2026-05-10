@@ -1,15 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaDownload } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaDownload, FaPaperPlane, FaPaperclip } from 'react-icons/fa'
 import './Hero.css'
 import pp from "../assets/mainimg.jpeg"
 
 const Hero = () => {
   const socialLinks = [
-    { icon: FaLinkedin, url: 'https://linkedin.com/in/lekhan7', label: 'LinkedIn' },
-    { icon: FaGithub, url: 'https://github.com/lekhan-karumbaiah-k-t', label: 'GitHub' },
+    { icon: FaLinkedin, url: 'https://linkedin.com/in/lekhan-karumbaiah-k-t', label: 'LinkedIn' },
+    { icon: FaGithub, url: 'https://github.com/lekhan7', label: 'GitHub' },
     { icon: FaEnvelope, url: 'mailto:ktkarumbaiah@gmail.com', label: 'Email' },
-    { icon: FaPhone, url: 'tel:+917019564975', label: 'Phone' }
+    { icon: FaPhone, url: 'tel:+917019564975', label: 'Phone' },
+     { icon: FaPaperclip, url: 'src/assets/Lekhan_karumbaiah_k_t_Resume_compressed.pdf', label: 'Resume' }
   ]
 
   const containerVariants = {

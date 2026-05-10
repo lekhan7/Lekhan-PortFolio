@@ -18,17 +18,50 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    })
+
+    setResult('Sending...')
+
+    const data = new FormData()
+
+    data.append('access_key', 'fdb7ee29-00a1-4552-aad7-a9e21fc8f8b2')
+
+    data.append('name', formData.name)
+    data.append('email', formData.email)
+    data.append('subject', formData.subject)
+    data.append('message', formData.message)
+
+    try {
+
+      const response = await fetch(
+        'https://api.web3forms.com/submit',
+        {
+          method: 'POST',
+          body: data
+        }
+      )
+
+      const resultData = await response.json()
+
+      if (resultData.success) {
+
+        setResult('Message sent successfully!')
+
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        })
+
+      } else {
+        setResult('Something went wrong!')
+      }
+
+    } catch (error) {
+      setResult('Server Error!')
+    }
   }
 
   const contactInfo = [
