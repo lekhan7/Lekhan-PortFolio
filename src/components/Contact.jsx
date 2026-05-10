@@ -1,9 +1,20 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+  FaTwitter
+} from 'react-icons/fa'
+
 import './Contact.css'
 
 const Contact = () => {
+
+  const [result, setResult] = useState('')
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -105,7 +116,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
+
       <div className="container">
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,11 +126,17 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="section-header"
         >
-          <h2 className="section-title">Get In Touch</h2>
+
+          <h2 className="section-title">
+            Get In Touch
+          </h2>
+
           <div className="title-underline"></div>
+
         </motion.div>
 
         <div className="contact-content">
+
           <motion.div
             className="contact-info"
             initial={{ opacity: 0, x: -50 }}
@@ -125,49 +144,86 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="contact-title">Let's Connect</h3>
+
+            <h3 className="contact-title">
+              Let's Connect
+            </h3>
+
             <p className="contact-description">
-              I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
-              Feel free to reach out!
+              I'm always open to discussing new opportunities,
+              interesting projects, or just having a chat about
+              technology. Feel free to reach out!
             </p>
 
             <div className="contact-details">
+
               {contactInfo.map((info, index) => (
+
                 <motion.div
                   key={index}
                   className="contact-item"
                   whileHover={{ scale: 1.05 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 300
+                  }}
                 >
+
                   <div className="contact-icon">
                     <info.icon />
                   </div>
+
                   <div className="contact-text">
                     <h4>{info.title}</h4>
-                    <a href={info.link} className="contact-link">{info.value}</a>
+
+                    <a
+                      href={info.link}
+                      className="contact-link"
+                    >
+                      {info.value}
+                    </a>
                   </div>
+
                 </motion.div>
+
               ))}
+
             </div>
 
             <div className="social-links">
+
               <h4>Follow Me</h4>
+
               <div className="social-icons">
+
                 {socialLinks.map((social, index) => (
+
                   <motion.a
                     key={index}
                     href={social.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-link"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
+                    whileHover={{
+                      scale: 1.1,
+                      y: -5
+                    }}
+                    transition={{
+                      type: 'spring',
+                      stiffness: 300
+                    }}
                   >
+
                     <social.icon />
+
                   </motion.a>
+
                 ))}
+
               </div>
+
             </div>
+
           </motion.div>
 
           <motion.div
@@ -175,10 +231,19 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.4
+            }}
           >
-            <form onSubmit={handleSubmit} className="form">
+
+            <form
+              onSubmit={handleSubmit}
+              className="form"
+            >
+
               <div className="form-group">
+
                 <input
                   type="text"
                   name="name"
@@ -188,9 +253,11 @@ const Contact = () => {
                   required
                   className="form-input"
                 />
+
               </div>
 
               <div className="form-group">
+
                 <input
                   type="email"
                   name="email"
@@ -200,9 +267,11 @@ const Contact = () => {
                   required
                   className="form-input"
                 />
+
               </div>
 
               <div className="form-group">
+
                 <input
                   type="text"
                   name="subject"
@@ -212,9 +281,11 @@ const Contact = () => {
                   required
                   className="form-input"
                 />
+
               </div>
 
               <div className="form-group">
+
                 <textarea
                   name="message"
                   value={formData.message}
@@ -224,6 +295,7 @@ const Contact = () => {
                   className="form-textarea"
                   rows="5"
                 ></textarea>
+
               </div>
 
               <motion.button
@@ -231,14 +303,28 @@ const Contact = () => {
                 className="submit-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 300
+                }}
               >
+
                 Send Message
+
               </motion.button>
+
+              <p className="form-result">
+                {result}
+              </p>
+
             </form>
+
           </motion.div>
+
         </div>
+
       </div>
+
     </section>
   )
 }
