@@ -10,10 +10,10 @@ const Hero = () => {
     { icon: FaGithub, url: 'https://github.com/lekhan7', label: 'GitHub' },
     { icon: FaEnvelope, url: 'mailto:ktkarumbaiah@gmail.com', label: 'Email' },
     { icon: FaPhone, url: 'tel:+917019564975', label: 'Phone' },
-     { icon: FaPaperclip, url: '/Lekhan_karumbaiah_k_t_Resume_compressed.pdf', label: 'Resume' }
+    { icon: FaPaperclip, url: '/Lekhan_karumbaiah_k_t_Resume_compressed.pdf', label: 'Resume' }
   ]
 
-  
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -69,7 +69,7 @@ const Hero = () => {
             >
               Hi, I'm <span className="gradient-text">Lekhan Karumbaiah K.T.</span>
             </motion.h1>
-            
+
             <motion.p
               className="hero-title"
               initial={{ opacity: 0, x: -50 }}
@@ -85,8 +85,8 @@ const Hero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Aspiring full-stack developer skilled in MERN stack, cloud tools, and modern web technologies. 
-              Experienced in building AI-integrated applications, participating in hackathons, and delivering 
+              Aspiring full-stack developer skilled in MERN stack, cloud tools, and modern web technologies.
+              Experienced in building AI-integrated applications, participating in hackathons, and delivering
               functional web apps under tight deadlines.
             </motion.p>
 
