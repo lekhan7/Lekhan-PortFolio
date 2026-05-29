@@ -17,14 +17,14 @@ const Experience = () => {
       ]
     },
     {
-      company: 'NullClass',
+      company: 'Yuga Yatra',
       duration: '6 Months',
       icon: FaCode,
       responsibilities: [
-        'Created full-stack web projects with dynamic dashboards using MERN stack',
-        'Integrated third-party APIs and deployed applications to cloud platforms',
-        'Wrote basic unit tests and participated in team code reviews',
-        'Improved front-end interactivity using React and JavaScript'
+        'Created full-stack web projects with dynamic dashboards using MERN stack.',
+        'Integrated third-party APIs and deployed applications to cloud platforms.',
+        'Worked as a team lead for linkcab and risthawalla .com',
+        'Receved a PPO for the hard work for one month '
       ]
     }
   ]
