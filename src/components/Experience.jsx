@@ -12,7 +12,7 @@ const Experience = () => {
       responsibilities: [
         'Developed full-stack applications using MERN stack (MongoDB, Express.js, React, Node.js)',
         'Implemented REST APIs and JWT-based authentication for secure user access',
-        'Built responsive UI components and integrated cloud storage (AWS S3) for file uploads',
+        'Built responsive UI components and integrated cloud storage for file uploads',
         'Collaborated with team using Git/GitHub and followed Agile workflow'
       ]
     },

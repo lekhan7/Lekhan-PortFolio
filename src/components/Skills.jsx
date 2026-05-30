@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaAws, FaGitAlt, FaJava } from 'react-icons/fa'
+import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaJava } from 'react-icons/fa'
 import { SiMongodb, SiExpress,SiFirebase, SiTailwindcss, SiPython, SiCplusplus } from 'react-icons/si'
 import './Skills.css'
 
@@ -34,7 +34,6 @@ const Skills = () => {
     {
       title: 'Tools & Technologies',
       skills: [
-        { name: 'AWS', icon: FaAws, level: 75 },
         { name: 'Git/GitHub', icon: FaGitAlt, level: 85 }
       ]
     }

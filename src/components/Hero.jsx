@@ -91,6 +91,33 @@ const Hero = () => {
             </motion.p>
 
             <motion.div
+              className="google-search-link"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              style={{ marginTop: '0.5rem', marginBottom: '2rem' }}
+            >
+              <a 
+                href="https://www.google.com/search?q=Lekhan+Karumbaiah+KT" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ 
+                  color: 'var(--text-secondary, #9ca3af)', 
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  fontSize: '1rem',
+                  fontStyle: 'italic',
+                  transition: 'color 0.3s ease'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.color = 'var(--primary-color, #6366f1)'}
+                onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary, #9ca3af)'}
+              >
+                "Curious about my digital footprint? Discover more by asking Google: <span style={{ fontWeight: '600', marginLeft: '6px', borderBottom: '1px solid currentColor' }}>Who is Lekhan Karumbaiah KT?</span>"
+              </a>
+            </motion.div>
+
+            <motion.div
               className="hero-buttons"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
