@@ -10,7 +10,7 @@ const Hero = () => {
     { icon: FaGithub, url: 'https://github.com/lekhan7', label: 'GitHub' },
     { icon: FaEnvelope, url: 'mailto:ktkarumbaiah@gmail.com', label: 'Email' },
     { icon: FaPhone, url: 'tel:+917019564975', label: 'Phone' },
-    { icon: FaPaperclip, url: '/resume.pdf', label: 'Resume' }
+    { icon: FaPaperclip, url: '/Lekhan_karumbaiah_k_t_Resume.pdf', label: 'Resume' }
   ]
 
 
@@ -97,12 +97,12 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               style={{ marginTop: '0.5rem', marginBottom: '2rem' }}
             >
-              <a 
-                href="https://www.google.com/search?q=Lekhan+Karumbaiah+KT" 
-                target="_blank" 
+              <a
+                href="https://www.google.com/search?q=Lekhan+Karumbaiah+KT"
+                target="_blank"
                 rel="noopener noreferrer"
-                style={{ 
-                  color: 'var(--text-secondary, #9ca3af)', 
+                style={{
+                  color: 'var(--text-secondary, #9ca3af)',
                   textDecoration: 'none',
                   display: 'inline-flex',
                   alignItems: 'center',

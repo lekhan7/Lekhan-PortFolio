@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt, FaBrain, FaEye, FaChartLine, FaFutbol } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaBrain, FaEye, FaChartLine, FaFutbol, FaAdn } from 'react-icons/fa'
 import './Projects.css'
 
 const Projects = () => {
@@ -27,7 +27,7 @@ const Projects = () => {
       demo: 'https://bunk-brain.pages.dev/BB'
     },
     {
-      id: 1,
+      id: 2,
       title: 'Rebulk',
       tech: 'MERN Stack — JWT Auth',
       score: 93,
@@ -41,12 +41,12 @@ const Projects = () => {
         'Resume improvement recommendations',
         'Fully tested and deployed'
       ],
-      github: 'https://github.com/lekhan7',
-      demo: 'https://github.com/lekhan7',
+      github: 'https://github.com/lekhan7/rebulk.git'
+
 
     },
     {
-      id: 2,
+      id: 3,
       title: 'SnapScholar',
       tech: 'MERN Stack — OCR — AI',
       score: 83,
@@ -60,48 +60,27 @@ const Projects = () => {
         'YouTube integration for explanations',
         'Optimized for mobile and web'
       ],
-      github: 'https://github.com/lekhan7',
-      demo: 'https://github.com/lekhan7',
+      github: 'https://github.com/lekhan7/snapscholor.git'
 
-    },
-    {
-      id: 3,
-      title: 'Crypto Currency Tracker',
-      tech: 'MERN Stack — APIs',
-      score: 90,
-      icon: FaChartLine,
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-      description: 'Real-time cryptocurrency tracker that fetches live data from multiple APIs and displays current prices, historical trends, and price alerts.',
-      features: [
-        'Real-time data from multiple APIs',
-        'Interactive charts and graphs',
-        'Price alerts and notifications',
-        'Filtering by coin type',
-        'User-friendly dashboard for monitoring investments'
-      ],
-      github: 'https://github.com/lekhan7',
-      demo: 'https://github.com/lekhan7',
-
-    },
-    {
+    }, {
       id: 4,
-      title: 'Sporold',
-      tech: 'MERN Stack',
-      score: 76,
-      icon: FaFutbol,
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-      description: 'Platform to organize and host sports events. Users can register for events, see event details, and manage participation.',
+      title: 'Exam Hub',
+      tech: 'MERN Stack Multilingual ',
+      score: 83,
+      icon: FaAdn,
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      description: 'Multilingual exam preparation platform featuring live classes, real-time chat, and an interactive Meets',
       features: [
-        'Event registration and management',
-        'Admin panel for event creation',
-        'Responsive UI with notifications',
-        'Real-time participant tracking',
-        'Core functionality complete'
+        'Public rooma and Private Rooms ',
+        'Public chat room and Private chat room ',
+        'live classes',
+        'Optimized for mobile and web'
       ],
-      github: 'https://github.com/lekhan7',
-      demo: 'https://github.com/lekhan7',
+      github: 'https://github.com/lekhan7/ExamHub.git',
+      demo: 'https://exam-hub2.vercel.app/',
 
-    }
+    },
+
   ]
 
   const containerVariants = {
