@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaJava } from 'react-icons/fa'
-import { SiMongodb, SiExpress,SiFirebase, SiTailwindcss, SiPython, SiCplusplus } from 'react-icons/si'
+import { FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaNs8 } from 'react-icons/fa'
+import { SiMongodb, SiExpress, SiFirebase, SiTailwindcss, SiPython, SiCplusplus } from 'react-icons/si'
 import './Skills.css'
 
 const Skills = () => {
@@ -10,7 +10,7 @@ const Skills = () => {
       title: 'Programming Languages',
       skills: [
         { name: 'JavaScript', icon: FaJs, level: 90 },
-        { name: 'Python', icon: SiPython, level: 75 },
+        { name: 'N8N', icon: FaNs8, level: 80 },
       ]
     },
     {
