@@ -26,25 +26,7 @@ const Projects = () => {
 
       demo: 'https://bunk-brain.pages.dev/BB'
     },
-    {
-      id: 2,
-      title: 'Rebulk',
-      tech: 'MERN Stack — JWT Auth',
-      score: 93,
-      icon: FaBrain,
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      description: 'AI-powered resume builder web application with secure JWT authentication. Users can upload resumes, certificates, and other documents.',
-      features: [
-        'Modern responsive UI with real-time AI suggestions',
-        'Secure JWT-based authentication system',
-        'Cloud storage integration for documents',
-        'Resume improvement recommendations',
-        'Fully tested and deployed'
-      ],
-      github: 'https://github.com/lekhan7/rebulk.git'
 
-
-    },
     {
       id: 3,
       title: 'SnapScholar',
@@ -78,6 +60,25 @@ const Projects = () => {
       ],
       github: 'https://github.com/lekhan7/ExamHub.git',
       demo: 'https://exam-hub2.vercel.app/',
+
+    }, {
+      id: 5,
+      title: 'AI-Powered Google Sheets Automation using n8n',
+      tech: 'n8n',
+      score: 90,
+      icon: FaAdn,
+      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+      description: 'The project is an AI-powered workflow automation system built using n8n, designed to streamline business processes by integrating Google Sheets with AI services like ChatGPT and Claude. It allows users to automate data entry, analysis, and reporting tasks through a user-friendly web interface. The system enhances productivity by reducing manual workload and providing intelligent automation capabilities.',
+      features: [
+        'Automated data processing from Google Sheets',
+        'AI-powered data enrichment and analysis',
+        'Workflow visualization and monitoring',
+        'Integration with multiple AI services',
+        'Customizable automation workflows',
+        'Secure authentication and access control'
+      ],
+
+      demo: 'https://lekhan123.app.n8n.cloud/webhook/084c5392-4ac9-487e-925e-7197f87a2202/chat',
 
     },
 
