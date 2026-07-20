@@ -10,7 +10,7 @@ const Hero = () => {
     { icon: FaGithub, url: 'https://github.com/lekhan7', label: 'GitHub' },
     { icon: FaEnvelope, url: 'mailto:ktkarumbaiah@gmail.com', label: 'Email' },
     { icon: FaPhone, url: 'tel:+917019564975', label: 'Phone' },
-    { icon: FaPaperclip, url: '/Lekhan_karumbaiah_k_t_Resume_.pdf', label: 'Resume' }
+    { icon: FaPaperclip, url: '/Lekhan_karumbaiah_k_t_Resume.pdf', label: 'Resume' }
   ]
 
 
